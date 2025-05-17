@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Script Editor for YouTubers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .output {
+      margin-top: 20px;
+      background: #eef;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Smart Script Editor for YouTubers</h2>
+    <p>Write or paste your script below:</p>
+    <textarea id="scriptInput" placeholder="Start writing your video script..."></textarea>
+    <br>
+    <button onclick="generateSuggestions()">Generate Suggestions</button>
+
+    <div class="output" id="suggestions" style="display: none;">
+      <h3>Suggestions:</h3>
+      <p><strong>Intro:</strong> Hey everyone! Welcome back to my channel...</p>
+      <p><strong>CTA:</strong> Don’t forget to like, comment, and subscribe for more videos!</p>
+      <p><strong>Outro:</strong> Thanks for watching. I’ll see you in the next one!</p>
+    </div>
+  </div>
+
+  <script>
+    function generateSuggestions() {
+      document.getElementById('suggestions').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
